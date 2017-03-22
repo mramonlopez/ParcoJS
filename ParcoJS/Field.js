@@ -67,6 +67,10 @@ Field.prototype.getSize = function () {
     return this._size;
 };
 
+Field.prototype.getType = function() {
+    return this._type;
+};
+
 Field.prototype.getView = function(buffer) {
     switch (this._type) {
         case Field.Type.INT8:

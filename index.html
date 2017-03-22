@@ -1,4 +1,19 @@
 <html>
 <script type="text/javascript" src="ParcoJS/Field.js"></script>
 <script type="text/javascript" src="ParcoJS/Message.js"></script>
+<script type="text/javascript">
+
+var m = new ParcoJS.Message();
+m.addField('id', ParcoJS.Field.Type.INT8);
+m.addField('x', ParcoJS.Field.Type.INT8);
+m.addField('y', ParcoJS.Field.Type.INT8);
+
+m.id = 11;
+m.x = 3;
+m.y = 1;
+
+var v = new Uint8Array(m.getBuffer());
+console.log(v);
+
+</script>
 </html>
