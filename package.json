@@ -1,0 +1,31 @@
+{
+  "name": "parcojs",
+  "version": "0.0.1",
+  "description": "A lightweight real time game server library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist && mkdir -p dist",
+    "concat": "concat-cli -f ./ParcoJS/*.js -o dist/parco.js",
+    "build": "npm run clean && npm run concat"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mramonlopez/ParcoJS.git"
+  },
+  "keywords": [
+    "game",
+    "real-time",
+    "server"
+  ],
+  "author": "M. Ramon Lopez Torres <mramon.lopez@gmail.com> (http://manuelramonlopez.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mramonlopez/ParcoJS/issues"
+  },
+  "homepage": "https://github.com/mramonlopez/ParcoJS#readme",
+  "devDependencies": {
+    "concat": "^3.0.0",
+    "concat-cli": "^4.0.0"
+  }
+}
